@@ -1,0 +1,1 @@
+// This file is created to enable TailwindCSS auto-completion in VSCode
