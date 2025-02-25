@@ -1,7 +1,7 @@
 
 import React from 'react'
 import ProjectList from './ProjectList';
-import CardsSection from './CardsSection';
+import ProjectCards from './ProjectCards';
 
 function Projects() {
     return (
@@ -9,7 +9,8 @@ function Projects() {
             <h4 className='text-center'>Browse My Recent</h4>
             <h1 className='text-5xl font-bold text-center mb-10'>Projects</h1>
             <ProjectList />
-            <CardsSection />
+            <ProjectCards />
+            
         </div>
     )
 }

@@ -16,7 +16,7 @@ function Header() {
                 </div>
             </div>
 
-            <img src='profile.jpg' alt='profile' className='rounded-full w-1/3' />
+            <img src='profile.jpg' alt='profile' className='rounded-full w-1/3 border-1 border-white' />
         </div>
     )
 }

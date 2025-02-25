@@ -6,7 +6,7 @@ function Contact() {
     const email = 'lesleygao.it@gmail.com';
 
     return (
-        <div className='flex items-center justify-center p-30'>
+        <div className='flex items-center justify-center p-20'>
             <div className='flex flex-col space-y-3'>
                 <h4 className='text-center'>Get In Touch</h4>
                 <h1 className='text-5xl font-bold text-center mb-20'>Contact Me</h1>

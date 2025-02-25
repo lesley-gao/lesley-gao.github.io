@@ -1,10 +1,11 @@
 import React from 'react'
 
-function ProjectViewTwo({ title, description, links, techStacks, imagePath }) {
+function ProjectViewB({ title, description, contribution, links, techStacks, imagePath }) {
     return (
-        <div className='flex items-center gap-20 justify-end'>
+        <div className='flex items-center gap-30 justify-evenly'>
             <div className=' w-1/3 space-y-3'>
                 <h1 className='text-2xl font-semibold text-[#F8F3D9]'>{title}</h1>
+                <h2 className='font-semibold text-[#504B38]'>{contribution}</h2>
                 <p>{description}</p>
 
                 {/* teck stack section */}
@@ -20,7 +21,9 @@ function ProjectViewTwo({ title, description, links, techStacks, imagePath }) {
                         <a
                             key={link.label}
                             href={link.url}
-                            className="text-sm button border border-white  text-white "
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm button border border-white px-10 "
                         >
                             {link.label}
                         </a>
@@ -28,9 +31,9 @@ function ProjectViewTwo({ title, description, links, techStacks, imagePath }) {
                 </div>
             </div>
 
-            <img src={imagePath} alt={title} className='h-96' />
+            <img src={imagePath} alt={title} className='h-96 border border-white/60 shadow-md rounded-4xl' />
         </div>
     )
 }
 
-export default ProjectViewTwo
+export default ProjectViewB
