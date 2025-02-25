@@ -42,6 +42,17 @@ function ProjectList() {
                 ]}
                 techStacks={[FaJava, IoLogoJavascript]}
                 imagePath="blog-project.png" />
+
+            <ProjectViewB
+                title="Project Two A responsive web application"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus quis velit et aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus eu nibh ac pulvinar."
+                contribution='UI Design & Frontend Development'
+                links={[
+                    { label: 'Preview', url: 'https://www.figma.com/design/CiAxtZq7lLrvHdn7AUKnep/Pet-Story?node-id=1-2&p=f&t=t7daKY9CZV2nND7n-0' },
+                    { label: 'Demo', url: 'https://drive.google.com/file/d/1gPh_QOOdHQUUjvk9EHO31aNr-AAB7clZ/view' }
+                ]}
+                techStacks={[FaReact, RiTailwindCssFill, FaPython]}
+                imagePath="petstory.gif"/>
         </div>
     )
 }

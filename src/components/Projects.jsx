@@ -1,4 +1,3 @@
-
 import React from 'react'
 import ProjectList from './ProjectList';
 import ProjectCards from './ProjectCards';
@@ -10,7 +9,6 @@ function Projects() {
             <h1 className='text-5xl font-bold text-center mb-10'>Projects</h1>
             <ProjectList />
             <ProjectCards />
-            
         </div>
     )
 }

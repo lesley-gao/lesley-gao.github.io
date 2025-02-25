@@ -8,7 +8,7 @@ function AboutMe() {
             <h4 className='text-center'>Get To Know More</h4>
             <h1 className='text-5xl font-bold text-center mb-10'>About Me</h1>
 
-            <div className='flex gap-20 items-center justify-center' >
+            <div className='flex gap-20 items-center justify-center border border-white/70 rounded-4xl shadow-md hover:shadow-lg' >
                 <img src='avatar-transparent.png' alt='avatar' className='w-1/3 animate-wiggle' />
                 <div className='flex flex-col space-y-10 justify-center'>
                     <p className='s'><span className='text-2xl font-bold'>Frontend Developer</span><br />
