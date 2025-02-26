@@ -4,13 +4,13 @@ import ProjectCardTwo from "./SingleCardB";
 
 function ProjectCards() {
     return (
-        <div className="grid grid-cols-3 gap-6 mt-20">
+        <div className="grid grid-cols-3 gap-6 mt-30">
 
             <SingleCardA
                 title="Project One"
                 description="A responsive web application"
                 links={[
-                    { label: 'Github', url: '#' },
+                    { label: 'GitHub', url: '#' },
                     { label: 'Demo', url: '#' }
                 ]}
                 imagePath="dashboard.png"
@@ -20,7 +20,7 @@ function ProjectCards() {
                 title="Project Two"
                 description="An interactive dashboard"
                 links={[
-                    { label: 'Github', url: '#' },
+                    { label: 'GitHub', url: '#' },
                     { label: 'Demo', url: '#' }
                 ]}
                 imagePath="dashboard.png"
@@ -30,7 +30,7 @@ function ProjectCards() {
                 title="Project Three"
                 description="An interactive dashboard"
                 links={[
-                    { label: 'Github', url: '#' },
+                    { label: 'GitHub', url: '#' },
                     { label: 'Demo', url: '#' }
                 ]}
                 imagePath="dashboard.png"

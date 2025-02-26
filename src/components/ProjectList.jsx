@@ -9,13 +9,13 @@ import { IoLogoJavascript } from "react-icons/io5";
 
 function ProjectList() {
     return (
-        <div className='flex flex-col items-center space-y-20'>
+        <div className='flex flex-col items-center space-y-30'>
             <ProjectViewA
                 title="Vaccine Confidence Dashboard Project"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus quis velit et aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus eu nibh ac pulvinar."
                 contribution='UI Design & Frontend Development'
                 links={[
-                    { label: 'Github', url: 'https://github.com/lesley-gao/vaccine-confidence-dashboard-project' },
+                    { label: 'GitHub', url: 'https://Github.com/lesley-gao/vaccine-confidence-dashboard-project' },
                     { label: 'Demo', url: '#' }
                 ]}
                 techStacks={[FaReact, RiTailwindCssFill]}
@@ -26,7 +26,7 @@ function ProjectList() {
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus quis velit et aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus eu nibh ac pulvinar."
                 contribution='UI Design & Frontend Development'
                 links={[
-                    { label: 'Github', url: 'https://github.com/lesley-gao/event-based-real-time-social-app' },
+                    { label: 'GitHub', url: 'https://Github.com/lesley-gao/event-based-real-time-social-app' },
                     { label: 'Demo', url: 'https://drive.google.com/file/d/1gPh_QOOdHQUUjvk9EHO31aNr-AAB7clZ/view' }
                 ]}
                 techStacks={[FaReact, RiTailwindCssFill, FaPython]}
@@ -37,7 +37,7 @@ function ProjectList() {
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus quis velit et aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus eu nibh ac pulvinar."
                 contribution='UI Design & Full-stack Development'
                 links={[
-                    { label: 'Github', url: 'https://github.com/lesley-gao/travel-themed-blogging-website' },
+                    { label: 'GitHub', url: 'https://Github.com/lesley-gao/travel-themed-blogging-website' },
                     { label: 'Demo', url: 'https://drive.google.com/file/d/1YB70KMBh1vlhGcaGgWhrpDxcYgTXJ2bd/view' }
                 ]}
                 techStacks={[FaJava, IoLogoJavascript]}
@@ -52,7 +52,7 @@ function ProjectList() {
                     { label: 'Demo', url: 'https://drive.google.com/file/d/1gPh_QOOdHQUUjvk9EHO31aNr-AAB7clZ/view' }
                 ]}
                 techStacks={[FaReact, RiTailwindCssFill, FaPython]}
-                imagePath="petstory.gif"/>
+                imagePath="petstory.gif" />
         </div>
     )
 }

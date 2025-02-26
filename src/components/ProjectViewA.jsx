@@ -16,7 +16,7 @@ function ProjectViewA({ title, description, contribution, links, techStacks, ima
           ))}
         </div>
 
-        {/* Github & Demo section */}
+        {/* GitHub & Demo section */}
         <div className='flex gap-3'>
           {links.map((link) => (
             <a
