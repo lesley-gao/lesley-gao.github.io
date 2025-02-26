@@ -2,9 +2,13 @@ import React from 'react'
 
 function ProjectViewA({ title, description, contribution, links, techStacks, imagePath }) {
   return (
-    <div className='flex items-center justify-evenly gap-30'>
-      <img src={imagePath} alt={title} className=' h-96 ' />
-      <div className=' w-1/3 space-y-3'>
+    <div className='flex items-center justify-evenly gap-20 max-md:flex-col max-md:gap-0'>
+
+      {/* left side  */}
+      <img src={imagePath} alt={title} title={title} className=' h-80 object-contain' />
+
+      {/* right side  */}
+      <div className=' w-1/2 space-y-5 max-md:w-full'>
         <h1 className='text-2xl font-semibold text-[#F8F3D9]'>{title}</h1>
         <h2 className='font-semibold text-[#504B38]'>{contribution}</h2>
         <p>{description}</p>
@@ -16,7 +20,7 @@ function ProjectViewA({ title, description, contribution, links, techStacks, ima
           ))}
         </div>
 
-        {/* GitHub & Demo section */}
+        {/* Github & Demo links section */}
         <div className='flex gap-3'>
           {links.map((link) => (
             <a

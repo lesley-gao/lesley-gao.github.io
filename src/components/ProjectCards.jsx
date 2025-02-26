@@ -4,7 +4,7 @@ import ProjectCardTwo from "./SingleCardB";
 
 function ProjectCards() {
     return (
-        <div className="grid grid-cols-3 gap-6 mt-30">
+        <div className="grid grid-cols-3 gap-6 mt-30 max-md:grid-cols-1">
 
             <SingleCardA
                 title="Project One"

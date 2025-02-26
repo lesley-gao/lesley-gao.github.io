@@ -1,21 +1,9 @@
-import { SiMui } from "react-icons/si";
-import { SiSvelte } from "react-icons/si";
-import { SiPostman } from "react-icons/si";
-import { SiBootstrap } from "react-icons/si";
-import { FaPython } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
-import { AiFillGithub } from "react-icons/ai";
+import { SiMui, SiSvelte, SiPostman, SiBootstrap, SiSqlite, SiExpress, SiMongodb, SiTailwindcss } from "react-icons/si";
+import { FaPython, FaJava, FaNodeJs, FaReact } from "react-icons/fa";
+import { AiFillGithub, AiOutlineHtml5 } from "react-icons/ai";
 import { CgFigma } from "react-icons/cg";
-import { SiSqlite } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
-import { SiExpress } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiMongodb } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io";
-import { AiOutlineHtml5 } from "react-icons/ai";
-import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript, IoLogoCss3 } from "react-icons/io";
 import React from 'react'
 
 function Skills() {
@@ -45,10 +33,10 @@ function Skills() {
         <div className='flex flex-col items-center justify-center p-20 space-y-3'>
             <h4 className='text-center'>Explore My</h4>
             <h1 className='text-5xl font-bold text-center mb-10'>Skills</h1>
-            <div className='grid grid-cols-6 gap-6 space-y-6'>
+            <div className='grid grid-cols-6 gap-6 space-y-6 max-md:grid-cols-4'>
                 {skills.map(skill => (
-                    <div className='flex flex-col items-center' key={skill.name} title={skill.name} aria-label={skill.name}>
-                        <div className="text-5xl mb-2"> {skill.icon} </div>
+                    <div className='flex flex-col items-center hover:scale-105 hover:text-[#504B38]' key={skill.name} title={skill.name} aria-label={skill.name}>
+                        <div className="text-5xl mb-2 "> {skill.icon} </div>
                         <p>{skill.name}</p>
                     </div>
                 ))}
