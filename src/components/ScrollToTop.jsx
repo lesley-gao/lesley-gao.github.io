@@ -1,12 +1,12 @@
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import React, { useEffect, useState } from "react";
-import { ArrowUp } from "lucide-react";
 
-function ScrollToTopBtn() {
+function ScrollToTop() {
     const [showButton, setShowButton] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 300) {
+            if (window.scrollY > 1200) {
                 setShowButton(true);
             } else {
                 setShowButton(false);
@@ -27,12 +27,12 @@ function ScrollToTopBtn() {
     return showButton ? (
         <button
             onClick={scrollToTop}
-            className="fixed bottom-6 right-6 md:bottom-10 md:right-10 bg-customTheme-light hover:bg-customTheme-dark text-white p-3 rounded-full shadow-lg transition-all duration-300"
-            aria-label="Scroll to Top"
+            className="fixed bottom-6 right-6 md:bottom-10 md:right-10 p-3 rounded-full shadow-lg transition-all duration-300 animate-pulse"
+            aria-label="Scroll to top"
         >
-            <ArrowUp size={24} />
+            <BsFillArrowUpCircleFill size={24} />
         </button>
     ) : null;
 }
 
-export default ScrollToTopBtn;
+export default ScrollToTop;

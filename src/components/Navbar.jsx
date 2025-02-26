@@ -1,14 +1,25 @@
+import React from 'react';
+import { Link } from 'react-scroll';
+
 function Navbar() {
 
-  const navIterms = ["About", "Skills", "Projects", "Contact"];
+  const navItems = ["About", "Skills", "Projects", "Contact"];
 
   return (
     <>
-      <ul className='flex justify-end p-10 mr-10 max-md:justify-center '>
-        {navIterms.map((item, index) => (
-          <li key={index} className='mx-5 hover:underline underline-offset-4 clickeffect'>{item}</li>
+      <nav className=' flex justify-end p-10 mr-10 max-md:justify-center list-none'>
+        {navItems.map((item) => (
+          <Link
+            key={item}
+            to={item.toLowerCase()}
+            smooth={true}
+            duration={500}
+            className="mx-6 hover:font-medium hover:underline underline-offset-4 clickeffect"
+          >
+            {item}
+          </Link>
         ))}
-      </ul>
+      </nav>
     </>
   )
 }
