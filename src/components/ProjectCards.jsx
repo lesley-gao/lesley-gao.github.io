@@ -1,10 +1,11 @@
 import React from 'react'
 import SingleCardA from "./SingleCardA";
-import ProjectCardTwo from "./SingleCardB";
+import SingleCardB from "./SingleCardB";
+import AnimatedSection from './AnimatedSection';
 
 function ProjectCards() {
     return (
-        <div className="grid grid-cols-3 gap-6 mt-30 max-md:grid-cols-1">
+        <AnimatedSection className="grid grid-cols-3 gap-6 mt-30 max-md:grid-cols-1" delay={0.1}>
 
             <SingleCardA
                 title="Project One"
@@ -16,7 +17,7 @@ function ProjectCards() {
                 imagePath="dashboard.png"
             />
 
-            <ProjectCardTwo
+            <SingleCardB
                 title="Project Two"
                 description="An interactive dashboard"
                 links={[
@@ -35,7 +36,7 @@ function ProjectCards() {
                 ]}
                 imagePath="dashboard.png"
             />
-        </div>
+        </AnimatedSection>
     )
 }
 

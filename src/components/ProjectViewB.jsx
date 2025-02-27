@@ -1,11 +1,12 @@
 import React from 'react'
+import AnimatedSection from './AnimatedSection';
 
 function ProjectViewB({ title, description, contribution, links, techStacks, imagePath }) {
     return (
         <div className='flex items-center gap-15 justify-evenly max-md:flex-col max-md:gap-10'>
 
             {/* left side  */}
-            <div className=' w-1/2 space-y-3 max-md:w-full'>
+            <AnimatedSection className=' w-1/2 space-y-3 max-md:w-full' delay={0.2}>
                 <h1 className='text-2xl font-semibold text-[#F8F3D9]'>{title}</h1>
                 <h2 className='font-semibold text-[#504B38]'>{contribution}</h2>
                 <p>{description}</p>
@@ -31,10 +32,10 @@ function ProjectViewB({ title, description, contribution, links, techStacks, ima
                         </a>
                     ))}
                 </div>
-            </div>
+            </AnimatedSection>
 
             {/* right side  */}
-            <img src={imagePath} alt={title} title={title} className='h-80 border border-white/60 shadow-md rounded-3xl' />
+            <img src={imagePath} alt={title} title={title} className='h-80 border border-white/60 shadow-md rounded-3xl hover:scale-103 transition-all duration-300' />
         </div>
     )
 }
