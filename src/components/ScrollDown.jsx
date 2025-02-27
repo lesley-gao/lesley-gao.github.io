@@ -29,7 +29,7 @@ function ScrollDown() {
         showButton ? (
             <button
                 onClick={scrollToBottom}
-                className="fixed bottom-6 right-6 md:bottom-10 md:right-10 p-3 rounded-full shadow-lg transition-all duration-300 animate-pulse"
+                className="scrollbtn"
                 aria-label="Scroll down"
             >
                 <BsFillArrowDownCircleFill size={24} />

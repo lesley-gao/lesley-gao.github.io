@@ -1,14 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const AnimatedSection = ({
-  children,
-  className,
-  delay = 0,
-  direction = 'up',
-  ...props
-}) => {
-
+const AnimatedSection = ({ children, className, delay = 0, direction = 'up', ...props }) => {
+  
   // set initial positions for each direction
   const getInitialPosition = () => {
     switch (direction) {

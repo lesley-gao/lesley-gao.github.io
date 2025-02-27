@@ -32,22 +32,22 @@ function AboutMe() {
                 <div className='flex flex-col space-y-10 justify-center'>
                     <AnimatedSection delay={0.4} direction="left">
                         <p>
-                            <span className='text-2xl font-bold'>Frontend Developer</span><br />
-                            I'm a front-end developer with experience in building responsive and optimized sites
+                            <span className='text-2xl font-bold '>UI Design</span><br />
+                            I have taken charge of UI design for multiple team projects and have created design systems as well.
                         </p>
                     </AnimatedSection>
 
                     <AnimatedSection delay={0.5} direction="left">
                         <p>
-                            <span className='text-2xl font-bold'>Backend Developer</span><br />
-                            I have experience developing fast and optimised back-end systems and APIs
+                            <span className='text-2xl font-bold'>Frontend Development</span><br />
+                            I am passionate about front-end development and have experience building responsive, optimized websites.
                         </p>
                     </AnimatedSection>
 
                     <AnimatedSection delay={0.6} direction="left">
                         <p>
-                            <span className='text-2xl font-bold'>UI Designer</span><br />
-                            I have designed multiple landing pages and have created design systems as well
+                            <span className='text-2xl font-bold'>Backend Development</span><br />
+                            I have experience setting up databases and implementing CRUD operations using RESTful APIs.
                         </p>
                     </AnimatedSection>
                 </div>
