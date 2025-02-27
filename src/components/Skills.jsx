@@ -40,7 +40,7 @@ function Skills() {
                 <h1 className='text-5xl font-bold text-center mb-10'>Skills</h1>
             </AnimatedSection>
 
-            <div className='grid grid-cols-6 gap-6 space-y-6 max-md:grid-cols-4'>
+            <div className='grid grid-cols-6 gap-6 space-y-6 max-md:grid-cols-4 max-sm:grid-cols-3'>
                 {skills.map((skill, index) => (
                     <motion.div
                         className='flex flex-col items-center hover:scale-105 hover:text-[#504B38]'
@@ -54,7 +54,7 @@ function Skills() {
                         whileHover={{ scale: 1.1 }}
                     >
                         <motion.div
-                            className="text-5xl mb-2"
+                            className="text-5xl mb-2 max-md:text-2xl"
                             initial={{ scale: 0.8 }}
                             whileInView={{ scale: 1 }}
                             viewport={{ once: true }}
@@ -66,7 +66,7 @@ function Skills() {
                         >
                             {skill.icon}
                         </motion.div>
-                        <p>{skill.name}</p>
+                        <p className="max-md:text-sm">{skill.name}</p>
                     </motion.div>
                 ))}
             </div>

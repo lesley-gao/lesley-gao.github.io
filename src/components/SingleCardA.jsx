@@ -1,3 +1,4 @@
+// for later use
 import React from 'react'
 
 function ProjectCard({ title, description, links, imagePath }) {

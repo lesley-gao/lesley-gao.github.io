@@ -1,3 +1,4 @@
+// for later use
 import React, { useState } from 'react';
 
 function SingleCardB({ title, description, links, imagePath }) {

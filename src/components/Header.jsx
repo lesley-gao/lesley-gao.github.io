@@ -4,6 +4,8 @@ import { ImLinkedin } from "react-icons/im";
 import { Link } from 'react-scroll';
 import HighlightText from './HighlightText'
 function Header() {
+
+    const cvLink = 'https://drive.google.com/file/d/1YR7442lJOsjRZdNCzKHb5Zg8SiD_Mh5Z/view?usp=drive_link';
     return (
         <div className='flex p-24 gap-32 items-center max-md:flex-col max-md:p-10 max-md:gap-16' delay={0.1}>
 
@@ -17,7 +19,7 @@ function Header() {
                     My background has sharpened my <span className=' text-[#315354]'>attention to detail, adaptability, and I love collaborating with people</span>. I aim to leverage my professional experience and technical skills to make a significant impact on any future team.
                 </p>
                 <div className='flex space-x-3 items-center'>
-                    <button className='border border-[#504B38] bg-white text-[#504B38] button'><a href='https://drive.google.com/file/d/15dqGv3xrR4CmtXZ2t0FWcBZnTphTrZVV/view?usp=drive_link' target="_blank" rel="noopener noreferrer">Download CV</a></button>
+                    <button className='border border-[#504B38] bg-white text-[#504B38] button'><a href={cvLink} target="_blank" rel="noopener noreferrer">Download CV</a></button>
                     <Link to='contact' smooth={true} duration={500}>
                         <button className='border border-white bg-[#4f8a8b] text-white button'>Contact Info</button>
                     </Link>
