@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className=' flex justify-end p-10 mr-10 max-md:justify-center list-none'>
+      <nav className=' flex justify-end p-10 mr-10 max-md:justify-center max-sm:mr-0 list-none'>
         {navItems.map((item) => (
           <Link
             key={item}
