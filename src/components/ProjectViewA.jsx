@@ -4,18 +4,21 @@ import AnimatedSection from './AnimatedSection';
 
 function ProjectViewA({ title, description, contribution, links, techStacks, imagePath }) {
   return (
-    <div className='flex items-center justify-evenly gap-15 max-lg:flex-col max-md:gap-0'>
+    <div className='flex items-center justify-evenly bg-gray-100/50 shadow-sm  hover:scale-101 transition-all border border-gray-200 rounded-4xl p-10 gap-15 max-lg:flex-col max-md:gap-0'>
 
       {/* left side  */}
-      <img src={imagePath} alt={title} title={title} className=' h-80 object-contain hover:scale-103 transition-all duration-300' />
+      <img src={imagePath} alt={title} title={title} className=' h-80 object-contain hover:scale-103 transition-all duration-300 max-md:mb-10' />
 
       {/* right side  */}
-      <AnimatedSection className=' w-1/2 space-y-5 max-lg:w-full' delay={0.2}>
+      <AnimatedSection className=' w-1/2 space-y-8 max-lg:w-full' delay={0.2}>
 
-        <h1 className='text-2xl font-semibold text-[#F8F3D9]'>{title}</h1>
-        <h2 className='flex items-center font-semibold text-[#504B38] gap-3'> <LiaHandsHelpingSolid className='size-6' title='My Contribution' /> {contribution}</h2>
-        <p className='text-justify'>{description}</p>
-
+        <h1 className='text-3xl font-semibold max-md:text-2xl '>{title}</h1>
+        <h2 className=' flex items-center font-semibold gap-3'> <LiaHandsHelpingSolid className='size-6' title='My Contribution' /> My Contribution: <span className='text-gradient'> {contribution}</span></h2>
+        <div className='leading-7'>
+          {description.split('\n\n').map((paragraph, index) => (
+            <p key={index} className="mb-3">{paragraph}</p>
+          ))}
+        </div>
         {/* teck stack section */}
         <div className='flex gap-3 '>
           {techStacks.map((Icon, index) => (
@@ -31,7 +34,7 @@ function ProjectViewA({ title, description, contribution, links, techStacks, ima
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm button border border-white px-10 "
+              className="text-sm button border border-gray-600 px-10 "
             >
               {link.label}
             </a>

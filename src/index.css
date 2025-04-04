@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
 
 @import "tailwindcss";
 
@@ -8,7 +10,9 @@
   --color-themedark: #8BB2B2;
   --font-inter: 'Inter', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
-
+  --font-delius: 'Delius', sans-serif;
+  --font-oregano: 'Oregano', sans-serif;
+  --color-gradient: linear-gradient(to right, #60a1fa, #c6b4fe);
 
   /* animation for the avatar */
   --animate-wiggle: wiggle 1s ease-in-out infinite;
@@ -39,4 +43,11 @@
   .scrollbtn{
     @apply fixed bottom-6 right-6 md:bottom-10 md:right-10 p-3 rounded-full shadow-lg transition-all duration-300 animate-pulse cursor-pointer
   }
+
+  .text-gradient {
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
+

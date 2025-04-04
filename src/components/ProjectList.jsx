@@ -13,12 +13,12 @@ import { IoLogoJavascript, IoLogoCss3 } from "react-icons/io";
 
 function ProjectList() {
     return (
-        <div className='flex flex-col items-center space-y-30 max-md:space-y-20'>
+        <div className='flex flex-col items-center space-y-40 max-md:space-y-20'>
 
             <AnimatedSection delay={0.2}>
                 <ProjectViewA
-                    title="A Vaccine Confidence Dashboard Project"
-                    description="This team project, VaccineView, visualizes vaccine-related data and public sentiment from social media regarding vaccine safety.I led the UI design and frontend development, creating an intuitive interface with interactive charts that make complex data accessible. I focused on clean visualizations and user friendly UI and functionalities. As project coordinator, I facilitated team communication and ensured timely delivery of milestones. Our team won the Top Group Award among 17 teams for our project result and overall perform."
+                    title="A Vaccine Confidence Dashboard"
+                    description={`This team project, VaccineView, visualizes vaccine-related data and public sentiment from social media regarding vaccine safety. \n\n I led the UI design and frontend development, aiming to create an intuitive interface with interactive charts that make complex data accessible for the general public. I focused on clean visualizations and user friendly UI and functionalities. \n\n As project coordinator, I facilitated team communication and ensured timely delivery of milestones. Our team won the Top Group Award among 17 teams for our project result and overall perform.`}
                     contribution='UI Design & Frontend Development'
                     links={[
                         { label: 'GitHub', url: 'https://Github.com/lesley-gao/vaccine-confidence-dashboard-project' },
@@ -31,7 +31,7 @@ function ProjectList() {
             <AnimatedSection delay={0.2}>
                 <ProjectViewB
                     title="An Event-based Real-time Social Web App"
-                    description="Hippos! is a mobile-optimized web app connecting users with nearby spontaneous activities. It features location filtering, real-time notifications, and integrated messaging. I handled UI design and frontend development, creating a responsive interface with lively style and seamless user experience. Our project received an A grade, with evaluators praising the appealing design and responsive UI."
+                    description={`Hippos! is a mobile-optimized web app connecting users with nearby spontaneous activities. It features location filtering, real-time notifications, and integrated messaging. \n\nI handled UI design and frontend development, creating a responsive interface with lively style and seamless user experience. \n\nOur project received an A grade, with evaluators praising the appealing design and responsive UI.`}
                     contribution='UI Design & Frontend Development'
                     links={[
                         { label: 'GitHub', url: 'https://Github.com/lesley-gao/event-based-real-time-social-app' },
@@ -44,7 +44,7 @@ function ProjectList() {
             <AnimatedSection delay={0.2}>
                 <ProjectViewA
                     title="A Travel-themed Blogging Website"
-                    description="Blog Your Journey is a blogging website where travel enthusiast can browse and share travel stories with the world. As the UI designer, I created a visually rich environment showcasing travel photography while maintaining intuitive navigation.  I also contributed to backend and frontend development. Our project achieved an A+ grade, with specific praise for the exceptional CSS styling."
+                    description={`Blog Your Journey is a blogging website where travel enthusiast can browse and share travel stories with the world. \n\n As the UI designer, I created a visually rich environment showcasing travel photography while maintaining intuitive navigation.  I also contributed to backend and frontend development. \n\n Our project achieved an A+ grade, with specific praise for the exceptional CSS styling.`}
                     contribution='UI Design & Full-stack Development'
                     links={[
                         { label: 'GitHub', url: 'https://Github.com/lesley-gao/travel-themed-blogging-website' },
@@ -57,8 +57,8 @@ function ProjectList() {
             <AnimatedSection delay={0.2}>
                 <ProjectViewB
                     title="A Centralized Pet Care Management Platform"
-                    description="Pet Story (proposed platform) integrates iris recognition, AI health assessment, and unified communication platform to simplify pet care management, such as recording medical history, finding lost pets, seeking help in pet owner community. My UI design features playful icons and an intuitive layout, making pet care management engaging."
-                    contribution='UI Design '
+                    description={`Pet Story (proposed platform) integrates iris recognition, AI health assessment, and unified communication platform to simplify pet care management, such as recording medical history, finding lost pets, seeking help in pet owner community. \n\n My UI design features playful icons and an intuitive layout, making pet care management engaging.`}
+                    contribution='Feature Design & UI Design '
                     links={[
                         { label: 'Preview', url: 'https://www.figma.com/design/CiAxtZq7lLrvHdn7AUKnep/Pet-Story?node-id=1-2&p=f&t=t7daKY9CZV2nND7n-0' },
                         { label: 'Demo', url: 'https://drive.google.com/file/d/1lQ3jRUHjD0yl1N9Ij1Jnk13TOYHVCw_k/view?usp=drive_link' }
@@ -69,8 +69,8 @@ function ProjectList() {
 
             <AnimatedSection delay={0.2}>
                 <ProjectViewA
-                    title="A portfolio website showing personal projects"
-                    description="This portfolio website showcases my projects and highlights my passion for design and development. Built with React, Tailwind CSS and Framer Motion, it features responsive design and thoughtful animations."
+                    title="A Portfolio Website Showing Personal Projects"
+                    description={`This portfolio website showcases my projects and highlights my passion for design and development. \n\n Built with React, Tailwind CSS and Framer Motion, it features responsive design and thoughtful animations.`}
                     contribution='UI Design & Frontend Development'
                     links={[
                         { label: 'GitHub', url: 'https://github.com/lesley-gao/my-personal-portfolio' },

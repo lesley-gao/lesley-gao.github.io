@@ -5,8 +5,8 @@ import { CgFigma } from "react-icons/cg";
 import { BsGit } from "react-icons/bs";
 import { IoLogoJavascript, IoLogoCss3 } from "react-icons/io";
 import React from 'react';
-import AnimatedSection from './AnimatedSection';
 import { motion } from 'framer-motion';
+import SectionTitle from "./SectionTitle";
 
 function Skills() {
     const skills = [
@@ -33,24 +33,19 @@ function Skills() {
     return (
         <div className='flex flex-col items-center justify-center p-20 space-y-3' id='skills'>
 
-            <AnimatedSection delay={0.1}>
-                <h4 className='text-center'>Explore My</h4>
-            </AnimatedSection>
-            <AnimatedSection delay={0.2}>
-                <h1 className='text-5xl font-bold text-center mb-10'>Skills</h1>
-            </AnimatedSection>
+            <SectionTitle intro='Explore My' title='Skills' />
 
             <div className='grid grid-cols-6 gap-6 space-y-6 max-md:grid-cols-4 max-sm:grid-cols-3'>
                 {skills.map((skill, index) => (
                     <motion.div
-                        className='flex flex-col items-center hover:scale-105 hover:text-[#504B38]'
+                        className='flex flex-col items-center hover:scale-105 hover:text-[#93c2fd]'
                         key={skill.name}
                         title={skill.name}
                         aria-label={skill.name}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: 0.05 * index }}
+                        transition={{ duration: 0.2, delay: 0.05 * index }}
                         whileHover={{ scale: 1.1 }}
                     >
                         <motion.div
@@ -59,7 +54,6 @@ function Skills() {
                             whileInView={{ scale: 1 }}
                             viewport={{ once: true }}
                             transition={{
-                                duration: 0.5,
                                 delay: 0.05 * index + 0.2,
                                 type: "spring"
                             }}

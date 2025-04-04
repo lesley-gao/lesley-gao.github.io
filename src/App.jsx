@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className='h-auto bg-gradient-to-br from-themelight via-themedark to-themelight'>
+      <div className='h-auto bg-white'>
         <ScrollDown />
         <Navbar />
         <Header />
