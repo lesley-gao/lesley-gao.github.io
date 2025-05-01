@@ -12,7 +12,7 @@ function Header() {
         <div className='flex items-center justify-center gap-20 p-40 max-md:flex-col max-md:p-10 max-md:gap-16'>
 
             <div className='  flex flex-col space-y-10'>
-                <h1 className='text-6xl font-bold font-oregano'>Hi, I'm Lesley</h1>
+                <h1 className='text-6xl font-bold font-oregano max-md:mt-24'>Hi, I'm Lesley</h1>
 
                 <h2 className='text-4xl leading-12'>A <b>Web Developer</b><br />
                     with great passion in <b>UI/UX Design</b></h2>

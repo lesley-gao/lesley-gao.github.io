@@ -10,10 +10,11 @@ function AboutMe() {
             <SectionTitle intro='Get To Know More' title='About Me' />
 
             <AnimatedSection
-                className='flex gap-20 max-md:gap-10 p-15 items-center justify-center bg-gray-100/50 rounded-4xl shadow-md hover:shadow-lg max-md:flex-col'
+                className='flex gap-20 max-md:gap-10 p-15 items-center justify-center bg-gray-100/50 rounded-4xl shadow-md hover:shadow-lg max-lg:flex-col'
                 delay={0.3}
             >
-                <img src='jumping-avatar.png' alt='avatar' className='w-1/3  max-md:w-2/3 opacity-75 hover:opacity-100' />
+
+                <img src='drawing.jpg' alt='me drawing' className='w-1/3 max-lg:w-full opacity-85 hover:opacity-100 grayscale min-lg:p-10 ' />
 
                 <div className='flex flex-col space-y-10 justify-center'>
 
@@ -39,7 +40,7 @@ function AboutMe() {
 
                     <AnimatedSection delay={0.55} direction="left">
                         <p className='leading-7'>
-                            When I'm not coding, you'll find me exploring more about <b>technical writing</b> and <b>digital marketing</b>, solving puzzles, building Lego creations, capturing city moments through my camera lens, or exploring Auckland's spicy food scene after a refreshing hike.
+                            When I'm not coding, you'll find me exploring more about <b>technical writing</b> and <b>digital marketing</b>, solving puzzles, building Lego creations, occasionally drawing something, capturing city moments through my camera lens, or exploring Auckland's spicy food after a refreshing hike.
                         </p>
                     </AnimatedSection>
                 </div>

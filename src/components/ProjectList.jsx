@@ -22,7 +22,7 @@ function ProjectList() {
                     contribution='UI Design & Frontend Development'
                     links={[
                         { label: 'GitHub', url: 'https://Github.com/lesley-gao/vaccine-confidence-dashboard-project' },
-                        { label: 'Demo', url: 'https://drive.google.com/file/d/1AZYAXiMg99GJSVliujlR63u4uSDmDkBP/view?usp=drive_link' }
+                        { label: 'Demo', url: 'https://youtu.be/M8YTA1voUN0' }
                     ]}
                     techStacks={[CgFigma, FaReact, SiTailwindcss, AiOutlineHtml5, IoLogoJavascript, SiPlotly, BsGit, AiFillGithub, SiGooglemaps]}
                     imagePath="dashboard-project.png" />
@@ -35,7 +35,7 @@ function ProjectList() {
                     contribution='UI Design & Frontend Development'
                     links={[
                         { label: 'GitHub', url: 'https://Github.com/lesley-gao/event-based-real-time-social-app' },
-                        { label: 'Demo', url: 'https://drive.google.com/file/d/1gPh_QOOdHQUUjvk9EHO31aNr-AAB7clZ/view' }
+                        { label: 'Demo', url: 'https://youtu.be/oQqcrMLuryE' }
                     ]}
                     techStacks={[CgFigma, FaReact, SiTailwindcss, AiOutlineHtml5, IoLogoJavascript, SiMongodb, BsGit, AiFillGithub,]}
                     imagePath="activity-project.png" />
@@ -48,7 +48,7 @@ function ProjectList() {
                     contribution='UI Design & Full-stack Development'
                     links={[
                         { label: 'GitHub', url: 'https://Github.com/lesley-gao/travel-themed-blogging-website' },
-                        { label: 'Demo', url: 'https://drive.google.com/file/d/1YB70KMBh1vlhGcaGgWhrpDxcYgTXJ2bd/view' }
+                        { label: 'Demo', url: 'https://youtu.be/SVxB_peH_6U' }
                     ]}
                     techStacks={[SiSvelte, AiOutlineHtml5, IoLogoCss3, IoLogoJavascript, SiSqlite, SiExpress, FaNodeJs, SiPostman, BsGit, AiFillGithub,]}
                     imagePath="blog-project.png" />

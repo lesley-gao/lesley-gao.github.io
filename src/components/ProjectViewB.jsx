@@ -9,7 +9,7 @@ function ProjectViewB({ title, description, contribution, links, techStacks, ima
             {/* left side  */}
             <AnimatedSection className=' w-1/2 space-y-8 max-lg:w-full' delay={0.2}>
                 <h1 className='text-3xl font-semibold max-md:text-2xl '>{title}</h1>
-                <h2 className=' flex items-center font-semibold gap-3'> <LiaHandsHelpingSolid className='size-6' title='My Contribution' /> My Contribution: <span className='text-[#60a1fa]'> {contribution}</span></h2>
+                <h2 className=' flex items-center font-semibold gap-3'> <LiaHandsHelpingSolid className='size-6' title='My Contribution' /> My Contribution: <span className='text-gradient'> {contribution}</span></h2>
                 <div className='leading-7'>
                     {description.split('\n\n').map((paragraph, index) => (
                         <p key={index} className="mb-3">{paragraph}</p>
