@@ -2,14 +2,14 @@ import React from 'react'
 import { LiaHandsHelpingSolid } from "react-icons/lia";
 import AnimatedSection from './AnimatedSection';
 
-function ProjectViewB({ title, description, contribution, links, techStacks, imagePath }) {
+function ProjectViewB({ imagePath, title, description, contribution, links, techStacks, uxuilink }) {
     return (
         <div className='flex items-center gap-15 justify-evenly max-lg:flex-col max-md:gap-10'>
 
             {/* left side  */}
             <AnimatedSection className=' w-1/2 space-y-8 max-lg:w-full' delay={0.2}>
                 <h1 className='text-3xl font-semibold max-md:text-2xl '>{title}</h1>
-                <h2 className=' flex items-center font-semibold gap-3'> <LiaHandsHelpingSolid className='size-6' title='My Contribution' /> My Contribution: <span className='text-gradient'> {contribution}</span></h2>
+                <h2 className=' flex items-center font-semibold gap-3'> <LiaHandsHelpingSolid className='size-8' title='My Contribution' /> My Contribution: <span className='text-gradient'> {contribution}</span></h2>
                 <div className='leading-7'>
                     {description.split('\n\n').map((paragraph, index) => (
                         <p key={index} className="mb-3">{paragraph}</p>
@@ -40,7 +40,10 @@ function ProjectViewB({ title, description, contribution, links, techStacks, ima
             </AnimatedSection>
 
             {/* right side  */}
-            <img src={imagePath} alt={title} title={title} className='h-80 border border-white/60 shadow-md rounded-3xl hover:scale-103 transition-all duration-300' />
+            <a href={uxuilink} className='max-lg:w-4/5 w-1/2 object-contain border border-white/60 shadow-md rounded-3xl transition-all duration-300 max-md:mb-10 clickeffect cursor-pointer' target="_blank" rel="noopener noreferrer">
+                <img src={imagePath} alt={title} title={title} />
+            </a>
+
         </div>
     )
 }

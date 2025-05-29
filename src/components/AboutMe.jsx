@@ -10,7 +10,7 @@ function AboutMe() {
             <SectionTitle intro='Get To Know More' title='About Me' />
 
             <AnimatedSection
-                className='flex gap-20 max-md:gap-10 p-15 items-center justify-center bg-gray-100/50 rounded-4xl shadow-md hover:shadow-lg max-lg:flex-col'
+                className='flex gap-20 max-md:gap-10 p-15 items-center justify-center bg-[#f8f8f8] rounded-4xl hover:shadow-lg max-lg:flex-col'
                 delay={0.3}
             >
 
@@ -28,7 +28,7 @@ function AboutMe() {
                     <AnimatedSection delay={0.45} direction="left">
                         <p className='leading-7'>
                             Today, I blend my communication background with technical skills to create user experiences that truly connect.
-                            I love diving into <b>UI/UX design</b> with Figma; building <b>responsive interfaces</b> with React, Svelte, and JavaScript; crafting <b>backend solutions</b> with Node.js and REST APIs; as well as working with <b>databases</b> like SQL and MongoDB. My editorial eye helps me spot the details that make digital experiences feel polished and intuitive.
+                            I love diving into <b>UX/UI design</b> with Figma; building <b>responsive interfaces</b> with React, Svelte, and JavaScript; crafting <b>backend solutions</b> with Node.js and REST APIs; as well as working with <b>databases</b> like SQL and MongoDB. My editorial eye helps me spot the details that make digital experiences feel polished and intuitive.
                         </p>
                     </AnimatedSection>
 
@@ -40,7 +40,7 @@ function AboutMe() {
 
                     <AnimatedSection delay={0.55} direction="left">
                         <p className='leading-7'>
-                            When I'm not coding, you'll find me exploring more about <b>technical writing</b> and <b>digital marketing</b>, solving puzzles, building Lego creations, occasionally drawing something, capturing city moments through my camera lens, or exploring Auckland's spicy food after a refreshing hike.
+                            When I'm not coding, you'll find me exploring more about <b>digital marketing</b> and <b>technical writing</b>, solving puzzles, building Lego creations, occasionally drawing something, capturing city moments through my camera lens, or exploring Auckland's spicy food after a refreshing hike.
                         </p>
                     </AnimatedSection>
                 </div>

@@ -29,6 +29,23 @@
     }
   }
 
+  /* animation for the logo */
+  --animate-bounce: bounce 2s ease-in-out 3;
+
+  @keyframes bounce {
+
+    0%,
+    100% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    50% {
+      transform: translateY(-15px);
+      animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+  }
+
 }
 
 @layer components {
@@ -40,7 +57,7 @@
     @apply hover:translate-y-[-1px] hover:scale-[1.005] active:translate-y-[1px] cursor-pointer;
   }
 
-  .scrollbtn{
+  .scrollbtn {
     @apply fixed bottom-6 right-6 md:bottom-10 md:right-10 p-3 rounded-full shadow-lg transition-all duration-300 animate-pulse cursor-pointer
   }
 
@@ -49,5 +66,15 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-}
 
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;    /* IE & Edge */
+    scrollbar-width: none;    /* Firefox */
+
+  }
+
+}

@@ -2,18 +2,20 @@ import React from 'react'
 import { LiaHandsHelpingSolid } from "react-icons/lia";
 import AnimatedSection from './AnimatedSection';
 
-function ProjectViewA({ title, description, contribution, links, techStacks, imagePath }) {
+function ProjectViewA({ imagePath, title, description, contribution, links, techStacks, uxuilink }) {
   return (
-    <div className='flex items-center justify-evenly bg-gray-100/50 shadow-sm  hover:scale-101 transition-all border border-gray-200 rounded-4xl p-10 gap-15 max-lg:flex-col max-md:gap-0'>
+    <div className='flex items-center justify-evenly bg-[#f8f8f8] shadow-sm  hover:scale-101 transition-all border border-gray-200 rounded-4xl p-10 gap-15 max-lg:flex-col max-md:gap-0'>
 
       {/* left side  */}
-      <img src={imagePath} alt={title} title={title} className=' h-80 object-contain hover:scale-103 transition-all duration-300 max-md:mb-10' />
+      <a href={uxuilink} className='max-lg:w-4/5 w-1/2 object-contain transition-all duration-300 max-md:mb-10 clickeffect cursor-pointer' target="_blank" rel="noopener noreferrer">
+        <img src={imagePath} alt={title} title={title} />
+      </a>
 
       {/* right side  */}
       <AnimatedSection className=' w-1/2 space-y-8 max-lg:w-full' delay={0.2}>
 
         <h1 className='text-3xl font-semibold max-md:text-2xl '>{title}</h1>
-        <h2 className=' flex items-center font-semibold gap-3'> <LiaHandsHelpingSolid className='size-6' title='My Contribution' /> My Contribution: <span className='text-gradient'> {contribution}</span></h2>
+        <h2 className=' flex items-center font-semibold gap-3'> <LiaHandsHelpingSolid className='size-9' title='My Contribution' /> My Contribution: <span className='text-gradient'> {contribution}</span></h2>
         <div className='leading-7'>
           {description.split('\n\n').map((paragraph, index) => (
             <p key={index} className="mb-3">{paragraph}</p>
