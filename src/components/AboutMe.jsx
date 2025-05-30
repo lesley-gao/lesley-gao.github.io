@@ -10,7 +10,7 @@ function AboutMe() {
             <SectionTitle intro='Get To Know More' title='About Me' />
 
             <AnimatedSection
-                className='flex gap-20 max-md:gap-10 p-15 items-center justify-center bg-[#f8f8f8] rounded-4xl hover:shadow-lg max-lg:flex-col'
+                className='flex gap-20 max-md:gap-10 p-15 items-center justify-center bg-[#f8f8f8] rounded-4xl hover:shadow-lg max-lg:flex-col max-sm:p-10'
                 delay={0.3}
             >
 

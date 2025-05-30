@@ -11,9 +11,9 @@ function Header() {
         <div className='flex items-center justify-center gap-20 p-50 max-md:flex-col max-md:p-10 max-md:gap-16'>
 
             <div className=' flex flex-col space-y-10 max-lg:mt-32'>
-                <h1 className='text-6xl font-bold font-oregano'>Hi, I'm Lesley</h1>
+                <h1 className='text-6xl font-bold font-oregano max-sm:text-4xl'>Hi, I'm Lesley</h1>
 
-                <h2 className='text-4xl leading-12'>A <b>Web Developer</b><br />
+                <h2 className='text-4xl leading-12 max-sm:text-2xl max-sm:leading-8'>A <b>Web Developer</b><br />
                     with great passion in <b>UX/UI Design</b></h2>
 
                 <div className='flex space-x-3 items-center'>
@@ -26,7 +26,7 @@ function Header() {
                 </div>
             </div>
 
-            <img src='watercolor-profile.png' alt='profile image' className='w-2/5 max-md:w-2/3' />
+            <img src='watercolor-profile.png' alt='profile image' className='w-2/5 max-md:w-2/3 ' />
 
         </div>
     );

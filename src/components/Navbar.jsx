@@ -48,7 +48,7 @@ function Navbar() {
             <Link
               key={item}
               to="/uxui"
-              className="font-oregano mx-6 text-xl hover:underline underline-offset-4 clickeffect"
+              className="font-oregano mx-6 text-xl max-sm:text-md max-sm:mx-3 hover:underline underline-offset-4 clickeffect"
             >
               {item}
             </Link>
@@ -59,7 +59,7 @@ function Navbar() {
             <button
               key={item}
               onClick={() => handleSectionClick(item)}
-              className="font-oregano mx-6 text-xl hover:underline underline-offset-4 clickeffect bg-transparent border-none cursor-pointer"
+              className="font-oregano mx-6 text-xl max-sm:text-md max-sm:mx-3 hover:underline underline-offset-4 clickeffect bg-transparent border-none cursor-pointer"
             >
               {item}
             </button>

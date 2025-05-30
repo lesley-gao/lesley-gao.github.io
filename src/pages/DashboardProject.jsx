@@ -28,7 +28,7 @@ function DashboardProject() {
     return (
         <>
             <div className='flex max-sm:flex-col'>
-                <div className='w-1/5 max-lg:hidden h-auto fixed pt-30 min-2xl:pt-40 p-10 space-y-5 border-r border-[#dcdcdc]'>
+                <div className='w-1/5 max-lg:hidden h-screen fixed pt-30 min-2xl:pt-40 p-10 space-y-5 border-r border-[#dcdcdc]'>
                     <h1 className='font-bold font-oregano text-5xl mb-5 max-xl:text-4xl '>VaccineView </h1>
                     <h2 className='font-bold text-xl mb-10'> Real-time Vaccine Confidence Dashboard</h2>
                     <h2>Table of Contents</h2>
