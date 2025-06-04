@@ -3,6 +3,7 @@ import { BsFillArrowDownLeftCircleFill, BsFillArrowDownRightCircleFill } from "r
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import ScrollToTop from "../components/ScrollToTop";
+import scrollToSection from '../utils/scrollToSection'
 
 function UXUIPage() {
 
